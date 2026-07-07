@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Rehan Idrees</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ---------- RESUME HEADER ---------- */
+    .resume-head {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 70px 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .resume-id h1 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 900;
+      letter-spacing: -1px;
+      font-size: clamp(30px, 4.5vw, 46px);
+      margin-bottom: 8px;
+    }
+
+    .resume-id .role {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--blue);
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+
+    .resume-contact {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .resume-contact span {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12.5px;
+      color: var(--text-dim);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .resume-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    /* ---------- RESUME BODY ---------- */
+    .resume-body {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px 100px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 50px;
+    }
+
+    .resume-main h2.rs-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: var(--green);
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .resume-main h2.rs-title::before {
+      content: '// ';
+      color: var(--text-dim);
+    }
+
+    .rs-block {
+      margin-bottom: 46px;
+    }
+
+    .job {
+      margin-bottom: 30px;
+      position: relative;
+      padding-left: 22px;
+      border-left: 2px solid var(--line);
+    }
+
+    .job:last-child {
+      margin-bottom: 0;
+    }
+
+    .job::before {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 4px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 2px solid var(--blue);
+    }
+
+    .job-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .job-title {
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .job-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--text-dim);
+      white-space: nowrap;
+    }
+
+    .job-company {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: var(--blue);
+      margin-bottom: 10px;
+    }
+
+    .job ul {
+      list-style: none;
+    }
+
+    .job ul li {
+      color: var(--text-dim);
+      font-size: 13.8px;
+      line-height: 1.7;
+      margin-bottom: 6px;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .job ul li::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+    }
+
+    .edu {
+      margin-bottom: 22px;
+    }
+
+    .edu:last-child {
+      margin-bottom: 0;
+    }
+
+    .edu-degree {
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .edu-school {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12.5px;
+      color: var(--blue);
+      margin-bottom: 4px;
+    }
+
+    .edu-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+      color: var(--text-dim);
+    }
+
+    /* sidebar */
+    .resume-side .rs-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: var(--green);
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .resume-side .rs-title::before {
+      content: '// ';
+      color: var(--text-dim);
+    }
+
+    .side-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 38px;
+    }
+
+    .side-chip {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+      padding: 6px 12px;
+      border-radius: 16px;
+      background: var(--bg-panel);
+      border: 1px solid var(--line);
+      color: var(--text-dim);
+    }
+
+    .side-skill {
+      margin-bottom: 16px;
+    }
+
+    .side-skill-top {
+      display: flex;
+      justify-content: space-between;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+      color: var(--text-dim);
+      margin-bottom: 6px;
+    }
+
+    .side-track {
+      height: 5px;
+      border-radius: 5px;
+      background: var(--bg-panel-2);
+      overflow: hidden;
+    }
+
+    .side-fill {
+      height: 100%;
+      border-radius: 5px;
+    }
+
+    .cert-item {
+      background: var(--bg-panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+    }
+
+    .cert-item .c-name {
+      font-weight: 600;
+      font-size: 13px;
+      margin-bottom: 3px;
+    }
+
+    .cert-item .c-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--text-dim);
+    }
+
+    .lang-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+
+    .lang-row span:last-child {
+      color: var(--text-dim);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+    }
+
+    @media (max-width:900px) {
+      .resume-body {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ---------- PRINT STYLES ---------- */
+    @media print {
+
+      .navbar,
+      .nav-overlay,
+      footer,
+      .resume-actions {
+        display: none !important;
+      }
+
+      body {
+        background: #fff;
+        color: #111;
+      }
+
+      body::before {
+        display: none;
+      }
+
+      .rs-title,
+      .job-company {
+        color: #333 !important;
+      }
+
+      .resume-side .rs-title {
+        color: #333 !important;
+      }
+
+      section,
+      .resume-head,
+      .resume-body {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo"><span class="brace">&lt;</span>Rehan<span class="dot-a">.</span>Idrees<span
+        class="brace">/&gt;</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html" class="active">Resume</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Hire Me</a>
+      <button class="burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- RESUME HEADER -->
+  <div class="resume-head">
+    <div class="resume-id reveal in">
+      <div class="crumb">index.html <span class="sep">/</span> <span class="cur">resume.html</span></div>
+      <h1>Rehan Idrees</h1>
+      <div class="role">MERN Stack Developer</div>
+      <div class="resume-contact">
+        <span>📧 rehandeveloper600@gmail.com</span>
+        <span>📍 Layyah, Pakistan (Remote)</span>
+        <span>🔗 github.com/rehan-comm</span>
+        <span>🔗 tiktok/in/rehan_gujjar_296</span>
+      </div>
+    </div>
+    <div class="resume-actions reveal in">
+      <button class="btn btn-primary" onclick="window.print()">Download PDF ↓</button>
+      <a href="contact.html" class="btn btn-ghost">Hire Me</a>
+    </div>
+  </div>
+
+  <!-- RESUME BODY -->
+  <div class="resume-body">
+    <div class="resume-main">
+
+      <div class="rs-block reveal">
+        <h2 class="rs-title">Summary</h2>
+        <p style="color:var(--text-dim); font-size:14.5px; line-height:1.85;">
+          Full-stack developer with 2+ years of experience building web applications using MongoDB, Express, React and
+          Node.js.
+          Comfortable owning a feature end-to-end — from database schema to a polished, responsive UI. Focused on
+          writing clean,
+          maintainable code and shipping products that actually solve problems.
+        </p>
+      </div>
+
+      <div class="rs-block reveal">
+        <h2 class="rs-title">Experience</h2>
+
+        <div class="job">
+          <div class="job-top">
+            <div class="job-title">Full-Stack MERN Developer</div>
+            <div class="job-date">2026 — Present</div>
+          </div>
+          <div class="job-company">Personal Projects & Self Learning</div>
+          <ul>
+            <li>Built multiple full-stack web applications using the MERN stack.</li>
+            <li>Developed responsive websites with secure authentication and REST APIs.</li>
+            <li>Continuously improving problem-solving skills by building real-world projects.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-top">
+            <div class="job-title">Frontend Developer</div>
+            <div class="job-date">2025 — 2026</div>
+          </div>
+          <div class="job-company">Personal Portfolio & Practice Projects</div>
+          <ul>
+            <li>Created responsive websites using HTML, CSS, JavaScript, and React.</li>
+            <li>Focused on modern UI design, animations, and performance optimization.</li>
+            <li>Practiced Git and GitHub for version control and project management.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-top">
+            <div class="job-title">Web Development Learner</div>
+            <div class="job-date">2024 — 2025</div>
+          </div>
+          <div class="job-company">Self-Taught</div>
+          <ul>
+            <li>Learned the fundamentals of web development from online resources.</li>
+            <li>Built mini projects to strengthen HTML, CSS, JavaScript, Node.js, and MongoDB skills.</li>
+            <li>Explored API integration, authentication, and database management.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rs-block reveal">
+        <h2 class="rs-title">Education</h2>
+        <div class="edu">
+          <div class="edu-degree">Matric</div>
+          <div class="edu-school">Smart Orient School</div>
+          <div class="edu-date">2024 — 2026</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="resume-side">
+
+      <h2 class="rs-title">Tech Stack</h2>
+      <div class="side-chip-row">
+        <span class="side-chip">MongoDB</span>
+        <span class="side-chip">Express.js</span>
+        <span class="side-chip">React</span>
+        <span class="side-chip">Node.js</span>
+        <span class="side-chip">Redux</span>
+        <span class="side-chip">Tailwind CSS</span>
+        <span class="side-chip">REST APIs</span>
+        <span class="side-chip">Git / GitHub</span>
+        <span class="side-chip">Docker</span>
+        <span class="side-chip">JWT / OAuth</span>
+      </div>
+
+      <h2 class="rs-title">Core Skills</h2>
+      <div class="rs-block" style="margin-bottom:10px;">
+        <div class="side-skill">
+          <div class="side-skill-top"><span>JavaScript / React</span><span>95%</span></div>
+          <div class="side-track">
+            <div class="side-fill" style="width:95%; background:var(--blue);"></div>
+          </div>
+        </div>
+        <div class="side-skill">
+          <div class="side-skill-top"><span>Node.js / Express</span><span>90%</span></div>
+          <div class="side-track">
+            <div class="side-fill" style="width:90%; background:var(--green);"></div>
+          </div>
+        </div>
+        <div class="side-skill">
+          <div class="side-skill-top"><span>MongoDB</span><span>88%</span></div>
+          <div class="side-track">
+            <div class="side-fill" style="width:88%; background:var(--green);"></div>
+          </div>
+        </div>
+        <div class="side-skill">
+          <div class="side-skill-top"><span>UI / Responsive Design</span><span>85%</span></div>
+          <div class="side-track">
+            <div class="side-fill" style="width:85%; background:var(--purple);"></div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="rs-title">Certifications</h2>
+      <div class="rs-block" style="margin-bottom:10px;">
+        <div class="cert-item">
+          <div class="c-name">Meta Back-End Developer</div>
+          <div class="c-meta">Coursera · 2024</div>
+        </div>
+        <div class="cert-item">
+          <div class="c-name">JavaScript Algorithms & Data Structures</div>
+          <div class="c-meta">freeCodeCamp · 2023</div>
+        </div>
+        <div class="cert-item">
+          <div class="c-name">MongoDB Associate Developer</div>
+          <div class="c-meta">MongoDB University · 2023</div>
+        </div>
+      </div>
+
+      <h2 class="rs-title">Languages</h2>
+      <div class="lang-row"><span>English</span><span>Professional</span></div>
+      <div class="lang-row"><span>Urdu</span><span>Native</span></div>
+
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="logo"><span class="brace">&lt;</span>Rehan<span class="dot-a">.</span>Idrees<span
+            class="brace">/&gt;</span></a>
+        <p>MERN stack developer building clean, fast and reliable web applications.</p>
+      </div>
+      <div class="foot-col">
+        <h4>NAVIGATE</h4>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="blog.html">Blog</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>CONNECT</h4>
+        <a href="#">+923426271198</a>
+        <a href="#">rehandeveloper600@gmail.com</a>
+        <a href="#">Chowk Azam, Layyah, Pakistan</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Rehan Idrees. All rights reserved.</span>
+      <span>Built with React &amp; ❤️</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

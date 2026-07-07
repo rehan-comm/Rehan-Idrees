@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Rehan Idrees</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo"><span class="brace">&lt;</span>Rehan<span class="dot-a">.</span>Idrees<span
+        class="brace">/&gt;</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Hire Me</a>
+      <button class="burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <div class="page-head">
+    <div class="crumb reveal in">index.html <span class="sep">/</span> <span class="cur">about.html</span></div>
+    <h1 class="reveal in">About Me</h1>
+    <p class="reveal in">Who I am, what I build, and how I got into full-stack development.</p>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-photo reveal">
+       <img src="logo.png" alt="About Image">
+      </div>
+
+      <div class="about-text reveal">
+        <p>I'm a <strong>full-stack MERN developer</strong> based in Pakistan, passionate about turning ideas into fast,
+          usable products. I enjoy the whole process — planning the data model, wiring up APIs, and polishing the UI
+          until it feels right.</p>
+        <p>I've worked on <strong>dashboards, e-commerce features, auth systems and REST APIs</strong>, always focused
+          on writing code that's clean, scalable, and easy for the next developer to pick up.</p>
+        <p>When I'm not coding, I'm reading about system design or tinkering with a new tool just to see how it works
+          under the hood.</p>
+
+        <div class="mini-stats">
+          <div class="mini-stat"><b>30+</b><span>Projects</span></div>
+          <div class="mini-stat"><b>2+</b><span>Years Exp.</span></div>
+          <div class="mini-stat"><b>15+</b><span>APIs Built</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="stack">
+    <div class="eyebrow reveal">tech-stack</div>
+    <h2 class="section-title reveal">What I work with</h2>
+    <p class="section-sub reveal">Tools I reach for daily to build and ship full-stack apps.</p>
+
+    <div class="stack-cols">
+      <div class="skill-card reveal">
+        <div class="skill-top">
+          <div class="skill-name"><span class="sq" style="background:var(--green)"></span>MongoDB</div>
+          <div class="skill-pct">90%</div>
+        </div>
+        <div class="track">
+          <div class="fill" data-w="90" style="background:var(--green)"></div>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-top">
+          <div class="skill-name"><span class="sq" style="background:#e8e8e8"></span>Express.js</div>
+          <div class="skill-pct">88%</div>
+        </div>
+        <div class="track">
+          <div class="fill" data-w="88" style="background:#c9c9c9"></div>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-top">
+          <div class="skill-name"><span class="sq" style="background:var(--blue)"></span>React</div>
+          <div class="skill-pct">95%</div>
+        </div>
+        <div class="track">
+          <div class="fill" data-w="95" style="background:var(--blue)"></div>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-top">
+          <div class="skill-name"><span class="sq" style="background:var(--green)"></span>Node.js</div>
+          <div class="skill-pct">92%</div>
+        </div>
+        <div class="track">
+          <div class="fill" data-w="92" style="background:var(--green)"></div>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-top">
+          <div class="skill-name"><span class="sq" style="background:var(--orange)"></span>REST APIs</div>
+          <div class="skill-pct">85%</div>
+        </div>
+        <div class="track">
+          <div class="fill" data-w="85" style="background:var(--orange)"></div>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-top">
+          <div class="skill-name"><span class="sq" style="background:var(--purple)"></span>Tailwind / CSS</div>
+          <div class="skill-pct">90%</div>
+        </div>
+        <div class="track">
+          <div class="fill" data-w="90" style="background:var(--purple)"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section id="journey">
+    <div class="eyebrow reveal">my-journey</div>
+    <h2 class="section-title reveal">How I got here</h2>
+
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2022</div>
+        <div class="tl-title">Started learning web development</div>
+        <div class="tl-desc">Picked up HTML, CSS and JavaScript fundamentals, then fell in love with building things
+          that live in a browser.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2023</div>
+        <div class="tl-title">Went deep on the MERN stack</div>
+        <div class="tl-desc">Learned React for the front end and Node/Express/MongoDB for the back end. Built my first
+          full-stack CRUD apps.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2024</div>
+        <div class="tl-title">Shipped real projects</div>
+        <div class="tl-desc">Started freelancing and collaborating on production apps — auth systems, dashboards, and
+          APIs used by real users.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot" style="border-color:var(--green)"></div>
+        <div class="tl-year">Now</div>
+        <div class="tl-title">Building, learning, repeating</div>
+        <div class="tl-desc">Currently sharpening system design skills and looking for the next team or project to bring
+          value to.</div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="logo"><span class="brace">&lt;</span>Rehan<span class="dot-a">.</span>Idrees<span
+            class="brace">/&gt;</span></a>
+        <p>MERN stack developer building clean, fast and reliable web applications.</p>
+      </div>
+      <div class="foot-col">
+        <h4>NAVIGATE</h4>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="blog.html">Blog</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>CONNECT</h4>
+        <a href="#">+923426271198</a>
+        <a href="#">rehandeveloper600@gmail.com</a>
+        <a href="#">Chowk Azam, Layyah, Pakistan</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Rehan Idrees. All rights reserved.</span>
+      <span>Built with React &amp; ❤️</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

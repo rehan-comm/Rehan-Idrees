@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built My First Full-Stack MERN Project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 850px;
+            margin: 70px auto;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #2563eb;
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #fff;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            color: #94a3b8;
+            margin-bottom: 45px;
+            font-size: 15px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #243244;
+            margin-bottom: 45px;
+        }
+
+        h2 {
+            color: #fff;
+            margin: 40px 0 15px;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #cbd5e1;
+            margin-bottom: 22px;
+        }
+
+        ul {
+            margin: 20px 0 20px 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .quote {
+            background: #172554;
+            border-left: 5px solid #3b82f6;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 35px 0;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .code-box {
+            background: #1e293b;
+            padding: 18px;
+            border-radius: 10px;
+            margin: 30px 0;
+            color: #93c5fd;
+            font-family: Consolas, monospace;
+            overflow-x: auto;
+        }
+
+        .footer {
+            margin-top: 70px;
+            border-top: 1px solid #243244;
+            padding-top: 25px;
+            text-align: center;
+            color: #94a3b8;
+        }
+
+        @media(max-width:768px) {
+
+            .container {
+                width: 92%;
+                margin: 40px auto;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p,
+            li {
+                font-size: 16px;
+            }
+
+            .meta {
+                gap: 12px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <span class="tag">Featured Article</span>
+
+        <h1>How I Built My First Full-Stack MERN Project</h1>
+
+        <div class="meta">
+            <span>📅 July 2026</span>
+            <span>⏱ 5 min read</span>
+            <span>🏷 MERN Stack</span>
+        </div>
+
+        <hr>
+
+        <p>
+            Building my first full-stack MERN application was one of the most exciting milestones in my web development
+            journey. It was the first time I combined frontend, backend, APIs, and a database into one complete project.
+        </p>
+
+        <p>
+            Instead of jumping directly into coding, I spent some time planning the project structure. Breaking the
+            application into smaller tasks made development much easier and helped me stay focused throughout the
+            process.
+        </p>
+
+        <h2>Choosing the Right Technologies</h2>
+
+        <p>
+            The MERN Stack was the perfect choice because every part of the application uses JavaScript.
+        </p>
+
+        <ul>
+            <li>React for the frontend interface.</li>
+            <li>Node.js and Express.js for the backend.</li>
+            <li>MongoDB for storing application data.</li>
+            <li>JWT for user authentication.</li>
+        </ul>
+
+        <div class="code-box">
+            React → Express → Node.js → MongoDB
+        </div>
+
+        <h2>Building the Frontend</h2>
+
+        <p>
+            I created reusable React components and designed a responsive layout that works well on desktop, tablet, and
+            mobile devices. Keeping components small and reusable made the project easier to maintain.
+        </p>
+
+        <h2>Developing the Backend</h2>
+
+        <p>
+            The backend was built using Express and Node.js. I created REST APIs to handle requests, connect with
+            MongoDB, and return data to the frontend.
+        </p>
+
+        <h2>Challenges I Faced</h2>
+
+        <p>
+            Authentication was one of the biggest challenges during development. Understanding JWT tokens, protected
+            routes, and debugging backend errors took time, but solving these problems helped me understand how
+            real-world applications work.
+        </p>
+
+        <div class="quote">
+            "The best way to learn web development isn't by watching tutorials—it's by building real projects."
+        </div>
+
+        <h2>What I Learned</h2>
+
+        <p>
+            This project taught me how frontend and backend communicate, how databases store information, and how
+            important clean code is when building scalable applications.
+        </p>
+
+        <p>
+            I also improved my debugging skills, learned Git for version control, and became more confident in solving
+            programming problems independently.
+        </p>
+
+        <h2>Final Thoughts</h2>
+
+        <p>
+            Completing my first MERN Stack application gave me the confidence to continue building bigger and more
+            advanced projects. Every challenge became a lesson, and every bug made me a better developer.
+        </p>
+
+        <p>
+            If you're learning MERN Stack, start building projects as early as possible. Real experience is the fastest
+            way to improve your skills.
+        </p>
+
+        <div class="footer">
+            ❤️ Thanks for reading.
+        </div>
+
+    </div>
+
+</body>
+
+</html>

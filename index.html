@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>Rehan Idrees — MERN Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .quick-card {
+      background: var(--bg-panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 26px;
+      text-decoration: none;
+      color: var(--text);
+      transition: transform .25s, border-color .25s;
+      display: block;
+    }
+
+    .quick-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--blue);
+    }
+
+    .quick-card .qi {
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+
+    .quick-card h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .quick-card p {
+      color: var(--text-dim);
+      font-size: 13.5px;
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .quick-card .go {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--blue);
+    }
+  </style>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rehan Gujjar | Portfolio</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7LQ1MW7R34"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7LQ1MW7R34');
+  </script>
+
+</head>
+<body>
+
+</body>
+</html>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo"><span class="brace">&lt;</span>Rehan<span class="dot-a">.</span>Idrees<span
+        class="brace">/&gt;</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Hire Me</a>
+      <button class="burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-copy">
+      <div class="hero-badge reveal in"><span class="pulse"></span>Available for freelance work</div>
+      <h1 class="reveal in">I'm Rehan, a <span class="accent">MERN Stack</span> Developer crafting fast web apps.</h1>
+      <p class="lead reveal in">I design and build full-stack products — from database to deployment — using MongoDB,
+        Express, React and Node.js. Clean code, solid UX, no fluff.</p>
+      <div class="hero-cta reveal in">
+        <a href="projects.html" class="btn btn-primary">View My Work →</a>
+        <a href="resume.html" class="btn btn-ghost">Resume</a>
+      </div>
+      <div class="hero-stack reveal in">
+        <span>BUILT WITH</span>
+        <div class="icons">
+          <div class="stack-ico" style="color:var(--green)">M</div>
+          <div class="stack-ico" style="color:#e8e8e8">E</div>
+          <div class="stack-ico" style="color:var(--blue)">R</div>
+          <div class="stack-ico" style="color:var(--green)">N</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-art reveal in">
+      <div class="art-window">
+        <div class="art-head"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+        <div class="art-body">
+          <div><span class="com">// building the future, one commit at a time</span></div>
+          <div><span class="kw">function</span> <span class="fn">Intro</span>() {</div>
+          <div>&nbsp;&nbsp;<span class="kw">const</span> <span class="prop">name</span> = <span
+              class="str">"Rehan"</span>;</div>
+          <div>&nbsp;&nbsp;<span class="kw">return</span> <span class="fn">deploy</span>(name);</div>
+          <div>}</div>
+          <div class="bar-row">
+            <div class="bar"><i style="background:var(--green);" data-w="92"></i></div>
+            <div class="bar"><i style="background:var(--blue);" data-w="78"></i></div>
+            <div class="bar"><i style="background:var(--purple);" data-w="60"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="floating-badge fb1"><i style="background:var(--green)"></i>MongoDB ✓</div>
+      <div class="floating-badge fb2"><i style="background:var(--blue)"></i>React 18</div>
+      <div class="floating-badge fb3"><i style="background:var(--orange)"></i>Node.js API</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="eyebrow reveal">about-me</div>
+    <h2 class="section-title reveal">A little about me</h2>
+    <p class="section-sub reveal">Not just a title — here's what I actually do and care about.</p>
+
+    <div class="about-grid">
+      <div class="about-photo reveal">
+       <img src="logo.png" alt="About Image">
+      </div>
+
+      <div class="about-text reveal">
+        <p>I'm a <strong>full-stack MERN developer</strong> based in Pakistan, passionate about turning ideas into fast,
+          usable products. I enjoy the whole process — planning the data model, wiring up APIs, and polishing the UI
+          until it feels right.</p>
+        <p>I've worked on <strong>dashboards, e-commerce features, auth systems and REST APIs</strong>, always focused
+          on writing code that's clean, scalable, and easy for the next developer to pick up.</p>
+        <p>When I'm not coding, I'm reading about system design or tinkering with a new tool just to see how it works
+          under the hood.</p>
+
+        <div class="mini-stats">
+          <div class="mini-stat"><b>30+</b><span>Projects</span></div>
+          <div class="mini-stat"><b>2+</b><span>Years Exp.</span></div>
+          <div class="mini-stat"><b>250+</b><span>Happy Clients</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="eyebrow reveal">projects</div>
+    <h2 class="section-title reveal">Things I've built</h2>
+    <p class="section-sub reveal">A few projects that show how I think and build end-to-end.</p>
+
+    <div class="proj-grid">
+      <div class="proj-card reveal">
+        <img src="pro-1.png" alt="Project_image">
+        <div class="proj-body">
+          <div class="proj-tags"><span>HTML</span><span>CSS</span><span>React</span><span>JS</span></div>
+          <div class="proj-title">Personal Portfolio</div>
+          <div class="proj-desc">A clean and responsive portfolio showcasing my skills, projects, and journey as a
+            full-stack web developer. Designed to highlight my work with a modern user experience.</div>
+          <div class="proj-links"><a href="https://rehan-comm.github.io/Rehan-Developer/">Live Demo →</a><a
+              href="https://github.com/rehan-comm/Rehan-Developer">Source Code →</a></div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <img src="pro-5.png" alt="Project_image">
+        <div class="proj-body">
+          <div class="proj-tags"><span>Node JS</span><span>MongoDB</span><span>Express JS</span></div>
+          <div class="proj-title">Zelora — E-commerce Plateform</div>
+          <div class="proj-desc">A modern e-commerce platform designed for a smooth and secure shopping experience.
+            Built with a focus on performance, responsive design, and user-friendly navigation.</div>
+          <div class="proj-links"><a href="https://rehan-comm.github.io/zelora/">Live Demo →</a><a
+              href="https://github.com/rehan-comm/zelora">Source Code →</a></div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <img src="pro-2.png" alt="Project_image">
+        <div class="proj-body">
+          <div class="proj-tags"><span>MERN</span><span>Chart.js</span></div>
+          <div class="proj-title">Code Campus — Learning Plateform</div>
+          <div class="proj-desc">An online learning platform offering a wide range of computer and programming courses.
+            Built to make quality tech education accessible through an intuitive interface.</div>
+          <div class="proj-links"><a href="https://rehan-comm.github.io/Code-Campus/">Live Demo →</a><a
+              href="https://github.com/rehan-comm/Code-Campus">Source Code →</a></div>
+        </div>
+      </div>
+    </div>
+    <button><a href="projects.html">View More</a></button>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="eyebrow reveal">services</div>
+    <h2 class="section-title reveal">What I can do for you</h2>
+    <p class="section-sub reveal">From a single feature to a full product build — here's how I can help.</p>
+
+    <div class="serv-grid">
+      <div class="serv-card reveal">
+        <div class="serv-num">01</div>
+        <div class="serv-icon"><i class="ri-code-s-slash-fill"></i></div>
+        <div class="serv-title">Full-Stack Web Apps</div>
+        <div class="serv-desc">End-to-end MERN applications — from database design to a polished, responsive UI.</div>
+      </div>
+      <div class="serv-card reveal">
+        <div class="serv-num">02</div>
+        <div class="serv-icon"><i class="ri-webhook-fill"></i></div>
+        <div class="serv-title">REST API Development</div>
+        <div class="serv-desc">Secure, well-documented APIs with authentication, validation and clean architecture.
+        </div>
+      </div>
+      <div class="serv-card reveal">
+        <div class="serv-num">03</div>
+        <div class="serv-icon"><i class="ri-smartphone-line"></i></div>
+        <div class="serv-title">Responsive Design</div>
+        <div class="serv-desc">Seamless experience across all devices – mobile, tablet, desktop & beyond.</div>
+      </div>
+      <div class="serv-card reveal">
+        <div class="serv-num">04</div>
+        <div class="serv-icon"><i class="ri-tools-fill"></i></div>
+        <div class="serv-title">Maintenance &amp; Support</div>
+        <div class="serv-desc">Bug fixes, performance tuning and feature additions for existing applications.</div>
+      </div>
+    </div>
+  </section>
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="eyebrow reveal">testimonials</div>
+    <h2 class="section-title reveal">What people say</h2>
+    <p class="section-sub reveal">Feedback from clients and teammates I've worked with.</p>
+
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <div class="test-quote-icon">"</div>
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">Working with Rehan was a great experience. The website was delivered on time, looked
+          professional, and worked perfectly across all devices. Highly recommended!.</p>
+        <div class="test-author">
+          <div class="test-avatar">SK</div>
+          <div>
+            <div class="test-name">Asif Javed</div>
+            <div class="test-role">Karachi, Pakistan</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="test-card reveal">
+        <div class="test-quote-icon">"</div>
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">Excellent communication and attention to detail. The final website exceeded my expectations
+          and was fast, responsive, and easy to use.</p>
+        <div class="test-author">
+          <div class="test-avatar">BA</div>
+          <div>
+            <div class="test-name">Bilal Ahmed</div>
+            <div class="test-role">Islamabad, Pakistan</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="test-card reveal">
+        <div class="test-quote-icon">"</div>
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">Rehan transformed our idea into a modern and user-friendly website. The code quality and
+          overall design were impressive.</p>
+        <div class="test-author">
+          <div class="test-avatar">HN</div>
+          <div>
+            <div class="test-name">Hina Naz</div>
+            <div class="test-role">Lahore, Pakistan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- STATS COUNTER BAR -->
+  <section id="stats" style="padding:60px 24px;">
+    <div class="stats-bar reveal">
+      <div class="stat-item">
+        <div class="stat-value" data-target="30" data-suffix="+">0</div>
+        <div class="stat-caption">Projects Completed</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-value" data-target="2" data-suffix="+">0</div>
+        <div class="stat-caption">Years of Experience</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-value" data-target="15" data-suffix="+">0</div>
+        <div class="stat-caption">APIs Built</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-value" data-target="250" data-suffix="+">0</div>
+        <div class="stat-caption">Happy Clients</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-value" data-target="99" data-suffix="%">0</div>
+        <div class="stat-caption">On-Time Delivery</div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="eyebrow reveal">faq</div>
+    <h2 class="section-title reveal">Frequently asked questions</h2>
+    <p class="section-sub reveal">Common questions clients ask before we start working together.</p>
+
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>What's your typical process for a new project?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>I start with a discovery call to understand your goals and scope, then plan the data model and API
+            structure, build in focused sprints with regular check-ins, and finish with testing, deployment, and
+            documentation.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>How do you charge for projects?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Depends on the project — fixed price for well-defined scopes, or hourly for ongoing work. I'll always give
+            you a clear estimate before we start, no surprise costs.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>Do you work with clients remotely?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Yes, I work remotely with clients worldwide. I communicate via email, Slack, or whatever tool works best
+            for you, with regular progress updates.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>Can you maintain a project after launch?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Absolutely. I offer ongoing maintenance and support — bug fixes, performance improvements, and new features
+            — on a retainer or as-needed basis.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>What's your average project turnaround time?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>It varies by scope — a small feature might take a few days, while a full-stack app can take 3-6 weeks. I'll
+            give you a realistic timeline after our first call.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-box reveal">
+      <h2>Let's build something great</h2>
+      <p>Have a project in mind or just want to say hi? My inbox is open.</p>
+      <div class="contact-links">
+        <a href="https://github.com/rehan-comm" class="btn btn-primary"><i class="ri-github-fill"></i></a>
+        <a href="https://www.tiktok.com/@rehan_gujjar_296?lang=en" class="btn btn-ghost"><i class="ri-tiktok-line"></i></a>
+        <a href="https://www.instagram.com/fsc_eusn/" class="btn btn-ghost"><i class="ri-instagram-fill"></i></a>
+        <a href="https://www.facebook.com/me/" class="btn btn-ghost"><i class="ri-facebook-box-fill"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="logo"><span class="brace">&lt;</span>Rehan<span class="dot-a">.</span>Idrees<span
+            class="brace">/&gt;</span></a>
+        <p>MERN stack developer building clean, fast and reliable web applications.</p>
+      </div>
+      <div class="foot-col">
+        <h4>NAVIGATE</h4>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="blog.html">Blog</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>CONNECT</h4>
+        <a href="#">+923426271198</a>
+        <a href="#">rehandeveloper600@gmail.com</a>
+        <a href="#">Chowk Azam, Layyah, Pakistan</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Rehan Idrees. All rights reserved.</span>
+      <span>Built with React &amp; ❤️</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
